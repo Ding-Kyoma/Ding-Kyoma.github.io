@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <!-- SEO相关 -->
   
-  <link rel="canonical" href="https://blog.kyoma.top/posts/1004/"/>
+  <link rel="canonical" href="https://blog.kyoma.top/posts/27682/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -46,21 +46,23 @@
   <!-- feed -->
       <link rel="alternate" href="/atom.xml" title="Yiding's Blog" type="application/atom+xml">
   <!-- 页面元数据 -->
-  <title>tensorflow 自定义指标 - MacroRecall & MacroF1 - Yiding's Blog</title>
-  <meta name="keywords" content="metrics,null">
-  <meta desc name="description" content="在训练时可视化 macro recall值，对于class不平衡的数据集十分有用 - Yiding Wang - Yiding's Blog">
+  <title>gcp public data goes & cloudsat 数据处理 - Yiding's Blog</title>
+  <meta name="keywords" content="python,dataset,machine learning,null">
+  <meta desc name="description" content="从两个 raw 数据库中提取需要的数据，处理成机器学习可以使用的 dataset - Yiding Wang - Yiding's Blog">
   
 <meta property="og:type" content="article">
-<meta property="og:title" content="tensorflow 自定义指标 - MacroRecall &amp; MacroF1">
-<meta property="og:url" content="https://blog.kyoma.top/posts/1004/index.html">
+<meta property="og:title" content="gcp public data goes &amp; cloudsat 数据处理">
+<meta property="og:url" content="https://blog.kyoma.top/posts/27682/index.html">
 <meta property="og:site_name" content="Yiding&#39;s Blog">
-<meta property="og:description" content="在训练时可视化 macro recall值，对于class不平衡的数据集十分有用">
+<meta property="og:description" content="从两个 raw 数据库中提取需要的数据，处理成机器学习可以使用的 dataset">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://dingkyoma.coding.net/p/img/d/CloudPic/git/raw/master/img/IMG_0646-192.png">
-<meta property="article:published_time" content="2022-05-29T05:41:30.000Z">
-<meta property="article:modified_time" content="2022-05-29T06:14:36.280Z">
+<meta property="article:published_time" content="2022-05-29T05:14:48.000Z">
+<meta property="article:modified_time" content="2022-05-30T15:51:09.374Z">
 <meta property="article:author" content="Yiding Wang">
-<meta property="article:tag" content="metrics">
+<meta property="article:tag" content="python">
+<meta property="article:tag" content="dataset">
+<meta property="article:tag" content="machine learning">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://dingkyoma.coding.net/p/img/d/CloudPic/git/raw/master/img/IMG_0646-192.png">
   <style>
@@ -1750,9 +1752,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   volantis.GLOBAL_CONFIG ={
     debug: false,
-    cdn: {"js":{"app":"/js/app.e546c981.js","parallax":"https://unpkg.com/hexo-theme-volantis@5.3.2/source/js/plugins/parallax.js?time=1653925138937","rightMenu":"https://unpkg.com/hexo-theme-volantis@5.3.2/source/js/plugins/rightMenu.js?time=1653925138937","rightMenus":"https://unpkg.com/hexo-theme-volantis@5.3.2/source/js/plugins/rightMenus.js?time=1653925138937","sites":"https://unpkg.com/hexo-theme-volantis@5.3.2/source/js/plugins/tags/sites.js?time=1653925138937","friends":"https://unpkg.com/hexo-theme-volantis@5.3.2/source/js/plugins/tags/friends.js?time=1653925138937","contributors":"https://unpkg.com/hexo-theme-volantis@5.3.2/source/js/plugins/tags/contributors.js?time=1653925138937","search":"https://unpkg.com/hexo-theme-volantis@5.3.2/source/js/search/hexo.js?time=1653925138937"},"css":{"style":"/css/style.6ea4113b.css"}},
+    cdn: {"js":{"app":"/js/app.e546c981.js","parallax":"https://unpkg.com/hexo-theme-volantis@5.3.2/source/js/plugins/parallax.js?time=1653926076402","rightMenu":"https://unpkg.com/hexo-theme-volantis@5.3.2/source/js/plugins/rightMenu.js?time=1653926076402","rightMenus":"https://unpkg.com/hexo-theme-volantis@5.3.2/source/js/plugins/rightMenus.js?time=1653926076402","sites":"https://unpkg.com/hexo-theme-volantis@5.3.2/source/js/plugins/tags/sites.js?time=1653926076402","friends":"https://unpkg.com/hexo-theme-volantis@5.3.2/source/js/plugins/tags/friends.js?time=1653926076402","contributors":"https://unpkg.com/hexo-theme-volantis@5.3.2/source/js/plugins/tags/contributors.js?time=1653926076402","search":"https://unpkg.com/hexo-theme-volantis@5.3.2/source/js/search/hexo.js?time=1653926076402"},"css":{"style":"/css/style.6ea4113b.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1649552113628/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1649552113628/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1649552113628/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1649552113628/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1653925138937),
+    lastupdate: new Date(1653926076402),
     sidebar: {
       for_page: ["blogger","category","tagcloud","lastupdate","webinfo"],
       for_post: ["toc"],
@@ -2510,7 +2512,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
 <div id="l_main" class=''>
   <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable article-type-post" id="post" itemscope itemprop="blogPost">
-  <link itemprop="mainEntityOfPage" href="https://blog.kyoma.top/posts/1004/">
+  <link itemprop="mainEntityOfPage" href="https://blog.kyoma.top/posts/27682/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Yiding's Blog">
   </span>
@@ -2531,12 +2533,12 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       <h1 class="title" itemprop="name headline">
-        tensorflow 自定义指标 - MacroRecall & MacroF1
+        gcp public data goes & cloudsat 数据处理
       </h1>
       <div class='new-meta-box'>
         
           
-            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2022-05-29T13:41:30+08:00">
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2022-05-29T13:14:48+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
     <p>发布于：2022年5月29日</p>
@@ -2550,13 +2552,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div class="new-meta-item wordcount">
     <a class='notlink'>
       <i class="fa-solid fa-keyboard fa-fw" aria-hidden="true"></i>
-      <p>字数：520 字</p>
+      <p>字数：6 字</p>
     </a>
   </div>
   <div class="new-meta-item readtime">
     <a class='notlink'>
       <i class="fa-solid fa-hourglass-half fa-fw" aria-hidden="true"></i>
-      <p>时长：2 分钟</p>
+      <p>时长：1 分钟</p>
     </a>
   </div>
 
@@ -2572,7 +2574,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <p>
       <i class="fa-solid fa-eye fa-fw" aria-hidden="true"></i>
       
-      <span id="lc-pv" data-title="tensorflow 自定义指标 - MacroRecall & MacroF1" data-path="/posts/1004/">
+      <span id="lc-pv" data-title="gcp public data goes & cloudsat 数据处理" data-path="/posts/27682/">
         <span id='number'><i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i></span>
       </span>
       
@@ -2602,8 +2604,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
             
   
-  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/metrics/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>metrics</p></a></div>
-  <span hidden itemprop="keywords">metrics</span>
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/python/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>python</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/dataset/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>dataset</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/machine-learning/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>machine learning</p></a></div>
+  <span hidden itemprop="keywords">python dataset machine learning</span>
 
 
           
@@ -2618,21 +2620,22 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
-    <p>Tensorflow 自带的指标不够用，尤其是处理不平衡数据集时，<code>macro recall </code>可以指示出不被 classes weight 所影响的平均<code>recall</code>。</p>
-<div class="story post-story"><h2 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h2><p>自定义指标 class 需要继承 <a target="_blank" rel="noopener" href="https://www.tensorflow.org/api_docs/python/tf/keras/metrics/Metric">tf.keras.metrics.Metric</a> </p>
-<p>解释一下其中的 function</p>
-<ul>
-<li><code>reset_states</code> 每个epoch结束后清零</li>
-<li><code>update_state</code> 在一个epoch中每个step update的方式</li>
-<li><code>result</code> 返回的值</li>
-</ul>
-<p>我在 class 中维护了一张 confusion_matrix 叫做<code>total_cm</code>。因此能很方便的计算<code>macro recall</code>，<code>macro f1</code> 等数值。</p>
-<p>通过confusion_matrix可以计算其他很多的数值，可以通过修改<code>process_confusion_matrix</code> 来实现</p>
-</div><div class="story post-story"><h2 id="用法"><a href="#用法" class="headerlink" title="用法"></a>用法</h2><p>下面定义了两个自定义指标 <code>MacroRecall</code> 和 <code>MacroF1</code> ，使用的时候只要在<code>model.compile</code>时加进<code>metrics</code>即可。</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">MacroRecall</span>(tf.keras.metrics.Metric):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self, num_classes=<span class="number">2</span>, **kwargs</span>):</span><br><span class="line">        <span class="built_in">super</span>(MacroRecall,self).__init__(name=<span class="string">&#x27;macro_recall&#x27;</span>,**kwargs) <span class="comment"># handles base args (e.g., dtype)</span></span><br><span class="line">        self.num_classes=num_classes</span><br><span class="line">        self.total_cm = self.add_weight(<span class="string">&quot;total&quot;</span>, shape=(num_classes,num_classes), initializer=<span class="string">&quot;zeros&quot;</span>)</span><br><span class="line">        </span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">reset_states</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="keyword">for</span> s <span class="keyword">in</span> self.variables:</span><br><span class="line">            s.assign(tf.zeros(shape=s.shape))</span><br><span class="line">            </span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">update_state</span>(<span class="params">self, y_true, y_pred,sample_weight=<span class="literal">None</span></span>):</span><br><span class="line">        self.total_cm.assign_add(self.confusion_matrix(y_true,y_pred))</span><br><span class="line">        <span class="keyword">return</span> self.total_cm</span><br><span class="line">        </span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">result</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="keyword">return</span> self.process_confusion_matrix()</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">confusion_matrix</span>(<span class="params">self,y_true, y_pred</span>):</span><br><span class="line">        <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">        Make a confusion matrix</span></span><br><span class="line"><span class="string">        &quot;&quot;&quot;</span></span><br><span class="line">        y_true=tf.argmax(y_true,<span class="number">1</span>)</span><br><span class="line">        y_pred=tf.argmax(y_pred,<span class="number">1</span>)</span><br><span class="line">        cm=tf.math.confusion_matrix(y_true,y_pred,dtype=tf.float32,num_classes=self.num_classes)</span><br><span class="line">        <span class="keyword">return</span> cm</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">process_confusion_matrix</span>(<span class="params">self</span>):</span><br><span class="line">        cm=self.total_cm</span><br><span class="line">        diag_part=tf.linalg.diag_part(cm)</span><br><span class="line">        <span class="comment"># precision=diag_part/(tf.reduce_sum(cm,0)+tf.constant(1e-15))</span></span><br><span class="line">        recall=diag_part/(tf.reduce_sum(cm,<span class="number">1</span>)+tf.constant(<span class="number">1e-15</span>))</span><br><span class="line">        <span class="comment"># f1=2*precision*recall/(precision+recall+tf.constant(1e-15))</span></span><br><span class="line">        <span class="keyword">return</span> tf.reduce_sum(recall)/self.num_classes</span><br><span class="line"></span><br><span class="line">    </span><br><span class="line"><span class="keyword">class</span> <span class="title class_">MacroF1</span>(tf.keras.metrics.Metric):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self, num_classes=<span class="number">2</span>, **kwargs</span>):</span><br><span class="line">        <span class="built_in">super</span>(MacroF1,self).__init__(name=<span class="string">&#x27;macro_f1&#x27;</span>,**kwargs) <span class="comment"># handles base args (e.g., dtype)</span></span><br><span class="line">        self.num_classes=num_classes</span><br><span class="line">        self.total_cm = self.add_weight(<span class="string">&quot;total&quot;</span>, shape=(num_classes,num_classes), initializer=<span class="string">&quot;zeros&quot;</span>)</span><br><span class="line">        </span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">reset_states</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="keyword">for</span> s <span class="keyword">in</span> self.variables:</span><br><span class="line">            s.assign(tf.zeros(shape=s.shape))</span><br><span class="line">            </span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">update_state</span>(<span class="params">self, y_true, y_pred,sample_weight=<span class="literal">None</span></span>):</span><br><span class="line">        self.total_cm.assign_add(self.confusion_matrix(y_true,y_pred))</span><br><span class="line">        <span class="keyword">return</span> self.total_cm</span><br><span class="line">        </span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">result</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="keyword">return</span> self.process_confusion_matrix()</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">confusion_matrix</span>(<span class="params">self,y_true, y_pred</span>):</span><br><span class="line">        <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">        Make a confusion matrix</span></span><br><span class="line"><span class="string">        &quot;&quot;&quot;</span></span><br><span class="line">        y_true=tf.argmax(y_true,<span class="number">1</span>)</span><br><span class="line">        y_pred=tf.argmax(y_pred,<span class="number">1</span>)</span><br><span class="line">        cm=tf.math.confusion_matrix(y_true,y_pred,dtype=tf.float32,num_classes=self.num_classes)</span><br><span class="line">        <span class="keyword">return</span> cm</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">process_confusion_matrix</span>(<span class="params">self</span>):</span><br><span class="line">        cm=self.total_cm</span><br><span class="line">        diag_part=tf.linalg.diag_part(cm)</span><br><span class="line">        precision=diag_part/(tf.reduce_sum(cm,<span class="number">0</span>)+tf.constant(<span class="number">1e-15</span>))</span><br><span class="line">        recall=diag_part/(tf.reduce_sum(cm,<span class="number">1</span>)+tf.constant(<span class="number">1e-15</span>))</span><br><span class="line">        f1=<span class="number">2</span>*precision*recall/(precision+recall+tf.constant(<span class="number">1e-15</span>))</span><br><span class="line">        <span class="keyword">return</span> tf.reduce_sum(f1)/self.num_classes</span><br><span class="line">    </span><br><span class="line"><span class="comment"># model</span></span><br><span class="line">model.<span class="built_in">compile</span>(metrics=[<span class="string">&#x27;accuracy&#x27;</span>,MacroRecall(num_classes),MacroF1(num_classes)])</span><br></pre></td></tr></table></figure>
-
-
+    <div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="密码看着不太对 (>_< )( >_<)NO" data-whm="这个文章不能被校验, 不过还是能看看解密后的内容~">
+  <script id="hbeData" type="hbeData" data-hmacdigest="e7818d79a9dc6f68bcc592036b46d5a45d0db8f0c224f84889f19ea9640a48c2">165d50f05814027fb7fe5e4ae8a088d8d0253f6d48d4c706e368f3c5cbde838dd5ced62cabc190f59bf73fb2b8e68179ca091c142b50a838df1d8119d539b40127eccd839b292f645df0312cd10904165f79b55a72a2b6438287c543a01c5a48402bcc07a3d6d26465275db3d82bbc67b64f19f0c8af87172406cd2f90eb4a9cecbb2c1bb1503230cab98283688c5e55b109a3de9415a2d8b5234089a10543527a072138d2dd24853b353f9342e4f588a6edae409f722a83ef78c7af0c2350f56a992b7df3831767f2f9506794e9a1177b65e0a1cafacfaa8834f8a15f22eb1dd1a5f18d29e40b2bcf666bc37914888fd524b381fe1e027969d383960b4b2a033632c3223680d40a4da8ea700f91ccb8ad99da758a50f508a7a33d49788c29e14eac63318368a83286411d8389c0f69b3d95113285f9151af886feb0a0cc6682e44fda33833fb368bc766b339da9ca12f62d2dcd630a5cc27f5a9ab8703a3367bb59f4d759d02fa7bf76ce6c3b03bd03d148a405f38cca7d68745d8f9f75cf1f405f68299ba80d2f19015120fe4076942798a1682a6e82c54603255947cafe3790feb00810f1cb1b265f653495d30b5864425da1f80a8b50ac11a45369d5a57f649f0f4c39373229eb70edbda4e4db2b93276f471078e500b9044ee8f33421c69240fa93b354ee1bff5e97c7f6a135e49531e1079f7524233e8089f796942d8bbd256ffedf88be57d15ce9abdd1fa3299a4996593d8193590d7bdef8ae4513aba1d8ef3f5c09638c0b3d87fb4fcce73e89d0361a56ac50cdb636813bc2e41b9e2dc5ab26b0e5652df72b015fde0c71dfd3fd29bc33341e77e1945e6926c9af074a566084664d207be2b4aa13f28858995df4e2a6a134174eb19837319c92a42f0ba62a31d92ac41f34f97b737b2814fe4cb1b1b076f4afa7b48277d6a735e8d8d4ef51d848348ca27c30994324a71f32f395d689a5c6dc9a51be9ac955f1035915fcc28da973d8b9e31c4a0f4465d9a18e04798819bd09261a43160ef5bccc6169d2694b3d8bbaa3b88f9dd6b924370767d98974099755219509de090e44ed0abd71a645e6d88fede266b507119bea2f72483661533493ac9804c918ca0aa9b9e4f06483acd1af698e348af15c5048341824a2926a043d589f675231563c597ad75e0b48d48bf429d9a8de4472e68bc16626580e5b5258bd7b0b72740522af6c25aaeacefaa31891b1349dcdd23ec21b35c7011a1a2a3b0cb43bc10cf0f551ba205f8805a8bde5a0b39d6b0d92fa6ece9b48ad7e08eecffa52b81ec24d8407d07b79ed860b9ef42108e08671388e55f731382193eac51e1229eed43d20ec7f3df0048aa6e9a3911285a0fefa35336ebefb1490a564afa788ff7f816d5ff6a5cf072ea5ec4c05ead6ee11c7980089248c09b58f25c8a7a44cf3b274e588a3b66d11f1b30042cbf4e5e385fa944735c34f6cc1f99622774c9752140a78443543210d0163418f0329a774e38f9eaf23cf223cce6afed9824d3c4890a9b274dddf5e14aae23039236ff25c889e0843711798c479150ca27d7148511f2e87ca0a128a91c76e9fab02d86fb5832ac60481b74942709cd775bf02d4c6194c0fafae57b397c8fa6060a6e5558c4d7eaa02686b2dd699804ab391b118b351fd1c6808cc00194e3a32f7f978a2fba4b033fb4f56809deb4fa5d02f5a42e53c64e128e0c00539008fe0abe49206373e5df0fecd37ef85e1d79de74d5436e23886663e93538793d210fa86964640d7108f4dd99731189b3cab61252476f416cdaa724c2aa28d580cde5284d262bb617232faf791e2c3c455ed47338fed4cba9f51ceb72c2c02dcc839568c170105f0b014e8a8e9a5f6b76c9ffa0da17fc936f9cb3e56b73bb4139f23acf49eb0c648e984feff49ba6be21f1c66c62e4d9cf04fd9a22789fc0bdef160b7ea61be3fc36c08f5937b5e8cccea166df12c6488cae27da5c17b80b4845389319b51b80c36036db00eea3ccc</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-xray">
+      <input class="hbe hbe-input-field hbe-input-field-xray" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-xray" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-xray">密码是什么 (ﾟヘﾟ)？</span>
+      </label>
+      <svg class="hbe hbe-graphic hbe-graphic-xray" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+        <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>
+        <path d="M0,2.5c0,0,298.666,0,399.333,0C448.336,2.5,513.994,13,597,13c77.327,0,135-10.5,200.999-10.5c95.996,0,402.001,0,402.001,0"></path>
+      </svg>
+    </div>
+  </div>
 </div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">
   </div>
   
   
@@ -2650,8 +2653,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             <ul>
               
                 <li>
-                  <a href="https://www.tensorflow.org/api_docs/python/tf/keras/metrics/Metric" rel="external nofollow noopener noreferrer" target="_blank">
-                  tf.keras.metrics.Metric
+                  <a href="https://console.cloud.google.com/storage/browser/gcp-public-data-goes-17" rel="external nofollow noopener noreferrer" target="_blank">
+                  Google Cloud GOES 17
+                  </a>
+                </li>
+              
+                <li>
+                  <a href="https://www.cloudsat.cira.colostate.edu/data-products/2b-cldclass-lidar" rel="external nofollow noopener noreferrer" target="_blank">
+                  Collocated CloudSat/CALIPSO (Version 5)
                   </a>
                 </li>
               
@@ -2670,7 +2679,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
               
             
               
-                <p>本文永久链接是：<a href=https://blog.kyoma.top/posts/1004/>https://blog.kyoma.top/posts/1004/</a></p>
+                <p>本文永久链接是：<a href=https://blog.kyoma.top/posts/27682/>https://blog.kyoma.top/posts/27682/</a></p>
               
             
           </blockquote>
@@ -2687,10 +2696,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-05-29T14:14:36+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-05-30T23:51:09+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2022年5月29日</p>
+    <p>更新于：2022年5月30日</p>
   </a>
 </div>
 
@@ -2704,7 +2713,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://blog.kyoma.top/posts/1004/&title=tensorflow 自定义指标 - MacroRecall & MacroF1 - Yiding's Blog&summary="
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://blog.kyoma.top/posts/27682/&title=gcp public data goes & cloudsat 数据处理 - Yiding's Blog&summary=这是一篇加密的文章 (･∀･)ﾉ゛"
           
           >
           
@@ -2716,7 +2725,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://blog.kyoma.top/posts/1004/&title=tensorflow 自定义指标 - MacroRecall & MacroF1 - Yiding's Blog&summary="
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://blog.kyoma.top/posts/27682/&title=gcp public data goes & cloudsat 数据处理 - Yiding's Blog&summary=这是一篇加密的文章 (･∀･)ﾉ゛"
           
           >
           
@@ -2728,7 +2737,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://service.weibo.com/share/share.php?url=https://blog.kyoma.top/posts/1004/&title=tensorflow 自定义指标 - MacroRecall & MacroF1 - Yiding's Blog&summary="
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://blog.kyoma.top/posts/27682/&title=gcp public data goes & cloudsat 数据处理 - Yiding's Blog&summary=这是一篇加密的文章 (･∀･)ﾉ゛"
           
           >
           
@@ -2742,7 +2751,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <div class='hoverbox'>
           <a class='share'><img src="https://unpkg.com/volantis-static@0.0.1649552113628/media/org.volantis/logo/128/wechat.png"></a>
           <div class='target'>
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARgAAAEYCAAAAACi5bZQAAAC+0lEQVR42u3aS3LkQAgFwL7/pT0H8EwIHtjT2Fm7/kgqUpsXUK8P66/rhQAMGDBgwIA5A/MK19P1nx5Y/D39/1o9YMCAAQMGDJhzMOUAVCygC5YWXAUr1wMGDBgwYMCAOQtTDXTVB3WB08C2VQ8YMGDAgAED5vfAbG182nACAwYMGDBgwIBJA95TA6l6ffW+6eAODBgwYMCAAfNzYboNpmkh1ftM4b99EgkGDBgwYMCA+TaY7cbQ//4c1wMGDBgwYMCAOQMzXd0ANm1gbT3vn/sAAwYMGDBgwJyBeXpwd3DV3fBWcJwCgwEDBgwYMGDuwzxd2G0ITQd2aeOs+z0YMGDAgAED5h5MF6gL2R2Qpfua7hsMGDBgwIAB8/Ng0iCWBsH0Raw1usCAAQMGDBgwZ2GmAa07aPuq77t1gQEDBgwYMGDuwaSDs+7qHugZF5g2uMCAAQMGDBgw52C6G0mD3PRFpIGzfH8wYMCAAQMGzBmYaSNoCtkdqG0dJAIDBgwYMGDA3IeZHuSpQqQHh6aFj5MvGDBgwIABA+ZtYdIGTzd4dRtY3X1tBUwwYMCAAQMGzD2YaeDbamhNDyB1A+ljwAMDBgwYMGDAvC3MtEG11djqHhAqF9r8HQwYMGDAgAFzFyYdbH1VgEtBusEVDBgwYMCAAXMfJt3gdNC13bDqgoEBAwYMGDBg7sF0g1ZaaPp7O6BNB39gwIABAwYMmHMwaWOpen23gZUWOD1ABAYMGDBgwIC5AzNtSKUBrPr/bvCcDg7BgAEDBgwYMHdgpiuFrQaw7QZXO/mCAQMGDBgwYN4W5hWu7cDVLWjrwBMYMGDAgAED5j7M9mDtY3ml0O3/gwEDBgwYMGDOwqQHbtLGUBzElgMpGDBgwIABA+b3waQFTQdyaRB9rA8MGDBgwIAB8+tgpg2sdJBXDZhlUDBgwIABAwbMWZhucIoHW2Gg6wbM9gsBAwYMGDBgwJyD2RpgpQO4KcgUEgwYMGDAgAFzD8YCAwYMGDBgwBxbfwAhnWK7N0uJpwAAAABJRU5ErkJggg==">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARgAAAEYCAAAAACi5bZQAAAC+klEQVR42u3awXHDMAwEQPffdFJA4hEPgBzDWf5kUxKx+twQfHwZv44HAjBgwIABA2YNzKM4fjwwnHe5wOJzuvWAAQMGDBgwYPbBHAegsLC08GfX6fxqPWDAgAEDBgyYvTDdhUwVkj5nbD1gwIABAwYMmH8Hc7pRVd2gunovGDBgwIABAwZMF6Yb3NLG2pqABwYMGDBgwIC5HSZuUA0HvqmA+OedSDBgwIABAwbMy2DSkUK9+rpcDxgwYMCAAQNmDUx3TAW6tLCvmwYYMGDAgAEDZg/MXQurNtau5p8Gzur6wYABAwYMGDB7YKobQlMbQ2lQTP+Pnw8GDBgwYMCAWQdT3Ug6PfAzHRyrv8cBDwwYMGDAgAGzBiYt+ArgeEHhfd0ACgYMGDBgwID5XJhukHtVI666ofUUGAwYMGDAgAGzDmaq4DQ4doNken+5EwkGDBgwYMCAeVuYaoOsetCneqAoXWfcuAMDBgwYMGDArIFJG2NpYEsLTRty1YB32XADAwYMGDBgwLw9THdh1etyQ6zYcDv+wGDAgAEDBgyYtTBpw6274VR9bvU95YYbGDBgwIABA+btYNKNqrTRVgVMN5i6oGDAgAEDBgyYfTBTDbLuwaH0A9z2AcGAAQMGDBgwa2G6BVYbZ93G3thGFxgwYMCAAQNmDcwpRBr8uv+nB4W6DUMwYMCAAQMGzF6Y7ourQasKetvBIzBgwIABAwbMx8BMB7D0/uoBpbTxBgYMGDBgwIDZD9P9vQrTDW7dg0lgwIABAwYMmH0w3TEVELuwU+sDAwYMGDBgwOyBmQpM0w2xcmHh9eVGFRgwYMCAAQPm7WHuCnTdDavu/LiBBwYMGDBgwIBZCzMdoNKGVxoEq8F0/EQVGDBgwIABA2Y9zCnA1XvTwJkedHq6DjBgwIABAwbMv4OpBqzTwqrz40AJBgwYMGDAgFkLkzbc0qB1d5CrfgAwYMCAAQMGzF6YVwW1LlS6nvgDgwEDBgwYMGDWwBhgwIABAwYMmGXjG8H0ZJ1Wxr65AAAAAElFTkSuQmCC">
           </div>
         </div>
       
@@ -2769,20 +2778,17 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     <div class="prev-next">
       
-        <a class='prev' href='/posts/1003/'>
-          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>nginx 404 重定向</p>
-          <p class='content'>简单记录一下如何将 nginx 404 页面重定向为 404.html
-Step. 1 打开配置文件查看配置文件路径
-1systemctl status nginx.service
-
-12345...</p>
+        <a class='prev' href='/posts/16007/'>
+          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>tensorflow 自定义指标 - MacroRecall & MacroF1</p>
+          <p class='content'>Tensorflow 自带的指标不够用，尤其是处理不平衡数据集时，macro recall 可以指示出不被 classes weight 所影响的平均recall。
+定义自定义指标 class ...</p>
         </a>
       
       
-        <a class='next' href='/posts/1002/'>
-          <p class='title'>gcp public data goes & cloudsat 数据处理<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>
-  165d50f05814027fb7fe5e4ae8a088d8d0253f6d48d4c706e368f3c5cbde838dd5ced62cabc190f59bf73fb2b8e681...</p>
+        <a class='next' href='/posts/195/'>
+          <p class='title'>m1 mac 如何完美开启 2k144 hidpi<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>HiDPI是苹果的一个显示技术，若你外接显示器很糊说明没有开启HiDPI。网上很多教程使用虚拟镜像的方式来开启，但是有很多的缺点。这是在最新mac上开启hidpi的方法。
+若你是使用intel芯...</p>
         </a>
       
     </div>
@@ -2798,7 +2804,7 @@ Step. 1 打开配置文件查看配置文件路径
 
   <article class="post white-box shadow floatable" id="comments">
     <span hidden>
-      <meta itemprop="discussionUrl" content="/posts/1004/index.html#comments">
+      <meta itemprop="discussionUrl" content="/posts/27682/index.html#comments">
     </span>
     <p ct><i class='fa-solid fa-comments'></i> 评论</p>
     
@@ -2821,7 +2827,7 @@ Step. 1 打开配置文件查看配置文件路径
 
 
 
-  <section class="widget toc-wrapper shadow floatable blur desktop mobile pjax" id="toc-div" >
+  <section class="widget toc-wrapper shadow floatable blur desktop mobile pjax" id="toc-div" style="display:none" >
     
   <header>
     
@@ -2831,7 +2837,7 @@ Step. 1 打开配置文件查看配置文件路径
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%9A%E4%B9%89"><span class="toc-text">定义</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%94%A8%E6%B3%95"><span class="toc-text">用法</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#cloudsat-%E6%95%B0%E6%8D%AE"><span class="toc-text">cloudsat 数据</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%8B%E8%BD%BD-cloudsat-%E6%95%B0%E6%8D%AE"><span class="toc-text">下载 cloudsat 数据</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%84%E7%90%86-cloudsat-%E6%95%B0%E6%8D%AE"><span class="toc-text">处理 cloudsat 数据</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#gcp-public-data-goes-%E6%95%B0%E6%8D%AE"><span class="toc-text">gcp public data goes 数据</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%8B%E8%BD%BDgoes-%E6%95%B0%E6%8D%AE"><span class="toc-text">下载goes 数据</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%84%E7%90%86-cloudsat-%E6%95%B0%E6%8D%AE-1"><span class="toc-text">处理 cloudsat 数据</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B4%E5%90%88%E6%95%B0%E6%8D%AE"><span class="toc-text">整合数据</span></a></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-text"></span></a></li></ol>
     </div>
   </section>
 
@@ -3188,7 +3194,7 @@ Step. 1 打开配置文件查看配置文件路径
 
   </ul>
 </div>
-<script src="https://unpkg.com/hexo-theme-volantis@5.3.2/source/js/plugins/rightMenus.js?time=1653925138937"></script>
+<script src="https://unpkg.com/hexo-theme-volantis@5.3.2/source/js/plugins/rightMenus.js?time=1653926076402"></script>
 <script>
   const RightMenusFunction = {};
   
@@ -3413,19 +3419,19 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
     
       const sites_api = document.getElementById('sites-api');
       if (sites_api != undefined && typeof SitesJS === 'undefined') {
-        volantis.js("https://unpkg.com/hexo-theme-volantis@5.3.2/source/js/plugins/tags/sites.js?time=1653925138937")
+        volantis.js("https://unpkg.com/hexo-theme-volantis@5.3.2/source/js/plugins/tags/sites.js?time=1653926076402")
       }
     
     
       const friends_api = document.getElementById('friends-api');
       if (friends_api != undefined && typeof FriendsJS === 'undefined') {
-        volantis.js("https://unpkg.com/hexo-theme-volantis@5.3.2/source/js/plugins/tags/friends.js?time=1653925138937")
+        volantis.js("https://unpkg.com/hexo-theme-volantis@5.3.2/source/js/plugins/tags/friends.js?time=1653926076402")
       }
     
     
       const contributors_api = document.getElementById('contributors-api');
       if (contributors_api != undefined && typeof ContributorsJS === 'undefined') {
-        volantis.js("https://unpkg.com/hexo-theme-volantis@5.3.2/source/js/plugins/tags/contributors.js?time=1653925138937")
+        volantis.js("https://unpkg.com/hexo-theme-volantis@5.3.2/source/js/plugins/tags/contributors.js?time=1653926076402")
       }
     
   };
@@ -3579,7 +3585,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
   function loadSearchScript() {
     // see: layout/_partial/scripts/_ctrl/cdnCtrl.ejs
-    return volantis.js("https://unpkg.com/hexo-theme-volantis@5.3.2/source/js/search/hexo.js?time=1653925138937");
+    return volantis.js("https://unpkg.com/hexo-theme-volantis@5.3.2/source/js/search/hexo.js?time=1653926076402");
   }
 
   function loadSearchService() {
@@ -3904,7 +3910,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
   var runningOnBrowser = typeof window !== "undefined";
   var isBot = runningOnBrowser && !("onscroll" in window) || typeof navigator !== "undefined" && /(gle|ing|ro|msn)bot|crawl|spider|yand|duckgo/i.test(navigator.userAgent);
   if (!isBot) {
-    volantis.js('https://unpkg.com/hexo-theme-volantis@5.3.2/source/js/plugins/parallax.js?time=1653925138937').then(()=>{
+    volantis.js('https://unpkg.com/hexo-theme-volantis@5.3.2/source/js/plugins/parallax.js?time=1653926076402').then(()=>{
       parallax()
     })
     volantis.pjax.send(()=>{
@@ -4163,7 +4169,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Yiding's Blog","url":"https://blog.kyoma.top/","logo":{"@type":"ImageObject","url":"https://dingkyoma.coding.net/p/img/d/CloudPic/git/raw/master/img/IMG_0646-192.png","width":191,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Yiding Wang","image":{"@type":"ImageObject","url":"https://dingkyoma.coding.net/p/img/d/CloudPic/git/raw/master/img/IMG_0646-192.png"},"url":"https://blog.kyoma.top/","sameAs":["https://github.com/volantis-x"],"description":"Technology blog website"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://blog.kyoma.top/","name":"Yiding's Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"https://blog.kyoma.top/categories/Machine-Learning/","name":"Machine Learning"}},{"@type":"ListItem","position":3,"item":{"@id":"https://blog.kyoma.top/posts/1004/","name":"tensorflow 自定义指标 - MacroRecall & MacroF1"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Yiding's Blog","url":"https://blog.kyoma.top/","keywords":null,"description":"Technology blog website","author":{"@type":"Person","name":"Yiding Wang","image":{"@type":"ImageObject","url":"https://dingkyoma.coding.net/p/img/d/CloudPic/git/raw/master/img/IMG_0646-192.png"},"url":"https://blog.kyoma.top/","description":"Technology blog website"},"publisher":{"@type":"Organization","name":"Yiding's Blog","url":"https://blog.kyoma.top/","logo":{"@type":"ImageObject","url":"https://dingkyoma.coding.net/p/img/d/CloudPic/git/raw/master/img/IMG_0646-192.png","width":191,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://blog.kyoma.top?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"tensorflow 自定义指标 - MacroRecall & MacroF1","description":"在训练时可视化 macro recall值，对于class不平衡的数据集十分有用","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.kyoma.top/posts/1004/"},"author":{"@type":"Person","name":"Yiding Wang","image":{"@type":"ImageObject","url":"https://dingkyoma.coding.net/p/img/d/CloudPic/git/raw/master/img/IMG_0646-192.png"},"url":"https://blog.kyoma.top/"},"publisher":{"@type":"Organization","name":"Yiding's Blog","logo":{"@type":"ImageObject","url":"https://dingkyoma.coding.net/p/img/d/CloudPic/git/raw/master/img/IMG_0646-192.png","width":191,"height":192}},"url":"https://blog.kyoma.top/posts/1004/","wordCount":0,"datePublished":"2022-05-29T05:41:30.000Z","dateModified":"2022-05-29T06:14:36.280Z","articleSection":"Machine Learning","keywords":"metrics","image":{"@type":"ImageObject","url":"https://dingkyoma.coding.net/p/img/d/CloudPic/git/raw/master/img/IMG_0646-192.png","width":191,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Yiding's Blog","url":"https://blog.kyoma.top/","logo":{"@type":"ImageObject","url":"https://dingkyoma.coding.net/p/img/d/CloudPic/git/raw/master/img/IMG_0646-192.png","width":191,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Yiding Wang","image":{"@type":"ImageObject","url":"https://dingkyoma.coding.net/p/img/d/CloudPic/git/raw/master/img/IMG_0646-192.png"},"url":"https://blog.kyoma.top/","sameAs":["https://github.com/volantis-x"],"description":"Technology blog website"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://blog.kyoma.top/","name":"Yiding's Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"https://blog.kyoma.top/categories/Machine-Learning/","name":"Machine Learning"}},{"@type":"ListItem","position":3,"item":{"@id":"https://blog.kyoma.top/posts/27682/","name":"gcp public data goes & cloudsat 数据处理"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Yiding's Blog","url":"https://blog.kyoma.top/","keywords":null,"description":"Technology blog website","author":{"@type":"Person","name":"Yiding Wang","image":{"@type":"ImageObject","url":"https://dingkyoma.coding.net/p/img/d/CloudPic/git/raw/master/img/IMG_0646-192.png"},"url":"https://blog.kyoma.top/","description":"Technology blog website"},"publisher":{"@type":"Organization","name":"Yiding's Blog","url":"https://blog.kyoma.top/","logo":{"@type":"ImageObject","url":"https://dingkyoma.coding.net/p/img/d/CloudPic/git/raw/master/img/IMG_0646-192.png","width":191,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://blog.kyoma.top?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"gcp public data goes & cloudsat 数据处理","description":"从两个 raw 数据库中提取需要的数据，处理成机器学习可以使用的 dataset","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.kyoma.top/posts/27682/"},"author":{"@type":"Person","name":"Yiding Wang","image":{"@type":"ImageObject","url":"https://dingkyoma.coding.net/p/img/d/CloudPic/git/raw/master/img/IMG_0646-192.png"},"url":"https://blog.kyoma.top/"},"publisher":{"@type":"Organization","name":"Yiding's Blog","logo":{"@type":"ImageObject","url":"https://dingkyoma.coding.net/p/img/d/CloudPic/git/raw/master/img/IMG_0646-192.png","width":191,"height":192}},"url":"https://blog.kyoma.top/posts/27682/","wordCount":17,"datePublished":"2022-05-29T05:14:48.000Z","dateModified":"2022-05-30T15:51:09.374Z","articleSection":"Machine Learning","keywords":"python,dataset,machine learning","image":{"@type":"ImageObject","url":"https://dingkyoma.coding.net/p/img/d/CloudPic/git/raw/master/img/IMG_0646-192.png","width":191,"height":192}}]</script>
 
 
 

@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://blog.kyoma.top/posts/1001/</loc>
+    <loc>https://blog.kyoma.top/posts/195/</loc>
     
     <lastmod>2022-05-30</lastmod>
     
@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>https://blog.kyoma.top/posts/1003/</loc>
+    <loc>https://blog.kyoma.top/posts/21102/</loc>
     
     <lastmod>2022-05-30</lastmod>
     
@@ -20,7 +20,7 @@
   </url>
   
   <url>
-    <loc>https://blog.kyoma.top/posts/1002/</loc>
+    <loc>https://blog.kyoma.top/posts/16007/</loc>
     
     <lastmod>2022-05-30</lastmod>
     
@@ -29,18 +29,18 @@
   </url>
   
   <url>
-    <loc>https://blog.kyoma.top/posts/1002/</loc>
+    <loc>https://blog.kyoma.top/posts/27682/</loc>
     
-    <lastmod>2022-05-29</lastmod>
+    <lastmod>2022-05-30</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://blog.kyoma.top/posts/1004/</loc>
+    <loc>https://blog.kyoma.top/posts/52657/</loc>
     
-    <lastmod>2022-05-29</lastmod>
+    <lastmod>2022-05-30</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -92,20 +92,6 @@
 
   
   <url>
-    <loc>https://blog.kyoma.top/tags/hexo/</loc>
-    <lastmod>2022-05-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.kyoma.top/tags/%E5%9B%BE%E5%BA%8A/</loc>
-    <lastmod>2022-05-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.kyoma.top/tags/python/</loc>
     <lastmod>2022-05-30</lastmod>
     <changefreq>weekly</changefreq>
@@ -127,14 +113,21 @@
   </url>
   
   <url>
-    <loc>https://blog.kyoma.top/tags/hidpi/</loc>
+    <loc>https://blog.kyoma.top/tags/hexo/</loc>
     <lastmod>2022-05-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.kyoma.top/tags/nginx/</loc>
+    <loc>https://blog.kyoma.top/tags/%E5%9B%BE%E5%BA%8A/</loc>
+    <lastmod>2022-05-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.kyoma.top/tags/hidpi/</loc>
     <lastmod>2022-05-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -147,17 +140,24 @@
     <priority>0.2</priority>
   </url>
   
+  <url>
+    <loc>https://blog.kyoma.top/tags/nginx/</loc>
+    <lastmod>2022-05-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
 
   
   <url>
-    <loc>https://blog.kyoma.top/categories/%E5%BB%BA%E7%AB%99/</loc>
+    <loc>https://blog.kyoma.top/categories/Machine-Learning/</loc>
     <lastmod>2022-05-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.kyoma.top/categories/Machine-Learning/</loc>
+    <loc>https://blog.kyoma.top/categories/%E5%BB%BA%E7%AB%99/</loc>
     <lastmod>2022-05-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
