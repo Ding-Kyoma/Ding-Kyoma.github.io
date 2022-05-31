@@ -1747,9 +1747,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   volantis.GLOBAL_CONFIG ={
     debug: false,
-    cdn: {"js":{"app":"/js/app.e546c981.js","parallax":"https://unpkg.com/hexo-theme-volantis@5.3.2/source/js/plugins/parallax.js?time=1653929095718","rightMenu":"https://unpkg.com/hexo-theme-volantis@5.3.2/source/js/plugins/rightMenu.js?time=1653929095718","rightMenus":"https://unpkg.com/hexo-theme-volantis@5.3.2/source/js/plugins/rightMenus.js?time=1653929095718","sites":"https://unpkg.com/hexo-theme-volantis@5.3.2/source/js/plugins/tags/sites.js?time=1653929095718","friends":"https://unpkg.com/hexo-theme-volantis@5.3.2/source/js/plugins/tags/friends.js?time=1653929095718","contributors":"https://unpkg.com/hexo-theme-volantis@5.3.2/source/js/plugins/tags/contributors.js?time=1653929095718","search":"https://unpkg.com/hexo-theme-volantis@5.3.2/source/js/search/hexo.js?time=1653929095718"},"css":{"style":"/css/style.692b77c8.css"}},
+    cdn: {"js":{"app":"/js/app.e546c981.js","parallax":"https://unpkg.com/hexo-theme-volantis@5.3.2/source/js/plugins/parallax.js?time=1653978505718","rightMenu":"https://unpkg.com/hexo-theme-volantis@5.3.2/source/js/plugins/rightMenu.js?time=1653978505718","rightMenus":"https://unpkg.com/hexo-theme-volantis@5.3.2/source/js/plugins/rightMenus.js?time=1653978505718","sites":"https://unpkg.com/hexo-theme-volantis@5.3.2/source/js/plugins/tags/sites.js?time=1653978505718","friends":"https://unpkg.com/hexo-theme-volantis@5.3.2/source/js/plugins/tags/friends.js?time=1653978505718","contributors":"https://unpkg.com/hexo-theme-volantis@5.3.2/source/js/plugins/tags/contributors.js?time=1653978505718","search":"https://unpkg.com/hexo-theme-volantis@5.3.2/source/js/search/hexo.js?time=1653978505718"},"css":{"style":"/css/style.692b77c8.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1649552113628/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1649552113628/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1649552113628/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1649552113628/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1653929095718),
+    lastupdate: new Date(1653978505718),
     sidebar: {
       for_page: ["blogger","category","tagcloud","lastupdate","webinfo"],
       for_post: ["toc"],
@@ -2950,7 +2950,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   </ul>
 </div>
-<script src="https://unpkg.com/hexo-theme-volantis@5.3.2/source/js/plugins/rightMenus.js?time=1653929095718"></script>
+<script src="https://unpkg.com/hexo-theme-volantis@5.3.2/source/js/plugins/rightMenus.js?time=1653978505718"></script>
 <script>
   const RightMenusFunction = {};
   
@@ -3175,19 +3175,19 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
     
       const sites_api = document.getElementById('sites-api');
       if (sites_api != undefined && typeof SitesJS === 'undefined') {
-        volantis.js("https://unpkg.com/hexo-theme-volantis@5.3.2/source/js/plugins/tags/sites.js?time=1653929095718")
+        volantis.js("https://unpkg.com/hexo-theme-volantis@5.3.2/source/js/plugins/tags/sites.js?time=1653978505718")
       }
     
     
       const friends_api = document.getElementById('friends-api');
       if (friends_api != undefined && typeof FriendsJS === 'undefined') {
-        volantis.js("https://unpkg.com/hexo-theme-volantis@5.3.2/source/js/plugins/tags/friends.js?time=1653929095718")
+        volantis.js("https://unpkg.com/hexo-theme-volantis@5.3.2/source/js/plugins/tags/friends.js?time=1653978505718")
       }
     
     
       const contributors_api = document.getElementById('contributors-api');
       if (contributors_api != undefined && typeof ContributorsJS === 'undefined') {
-        volantis.js("https://unpkg.com/hexo-theme-volantis@5.3.2/source/js/plugins/tags/contributors.js?time=1653929095718")
+        volantis.js("https://unpkg.com/hexo-theme-volantis@5.3.2/source/js/plugins/tags/contributors.js?time=1653978505718")
       }
     
   };
@@ -3341,7 +3341,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
   function loadSearchScript() {
     // see: layout/_partial/scripts/_ctrl/cdnCtrl.ejs
-    return volantis.js("https://unpkg.com/hexo-theme-volantis@5.3.2/source/js/search/hexo.js?time=1653929095718");
+    return volantis.js("https://unpkg.com/hexo-theme-volantis@5.3.2/source/js/search/hexo.js?time=1653978505718");
   }
 
   function loadSearchService() {
@@ -3656,7 +3656,8 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
       Parallax.start();
       index++;
       if (Parallax.cache) {
-        fetch(imgs[index % imgs.length] +"?t=" + new Date().getTime());
+      <!-- fetch(imgs[index % imgs.length] +"?t=" + new Date().getTime()); -->
+        fetch(imgs[index % imgs.length] +"?t=" + new Date().getTime() ,{mode:'no-cors'});
         if (index == imgs.length) {
           Parallax.cache = 0;
         }
@@ -3666,7 +3667,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
   var runningOnBrowser = typeof window !== "undefined";
   var isBot = runningOnBrowser && !("onscroll" in window) || typeof navigator !== "undefined" && /(gle|ing|ro|msn)bot|crawl|spider|yand|duckgo/i.test(navigator.userAgent);
   if (!isBot) {
-    volantis.js('https://unpkg.com/hexo-theme-volantis@5.3.2/source/js/plugins/parallax.js?time=1653929095718').then(()=>{
+    volantis.js('https://unpkg.com/hexo-theme-volantis@5.3.2/source/js/plugins/parallax.js?time=1653978505718').then(()=>{
       parallax()
     })
     volantis.pjax.send(()=>{
@@ -3925,7 +3926,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Yiding's Blog","url":"https://blog.kyoma.top/","logo":{"@type":"ImageObject","url":"https://dingkyoma.coding.net/p/img/d/CloudPic/git/raw/master/img/IMG_0646-192.png","width":191,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Yiding Wang","image":{"@type":"ImageObject","url":"https://dingkyoma.coding.net/p/img/d/CloudPic/git/raw/master/img/IMG_0646-192.png"},"url":"https://blog.kyoma.top/","sameAs":["https://github.com/volantis-x"],"description":"Technology blog website"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://blog.kyoma.top/","name":"Yiding's Blog"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Yiding's Blog","url":"https://blog.kyoma.top/","keywords":null,"description":"Technology blog website","author":{"@type":"Person","name":"Yiding Wang","image":{"@type":"ImageObject","url":"https://dingkyoma.coding.net/p/img/d/CloudPic/git/raw/master/img/IMG_0646-192.png"},"url":"https://blog.kyoma.top/","description":"Technology blog website"},"publisher":{"@type":"Organization","name":"Yiding's Blog","url":"https://blog.kyoma.top/","logo":{"@type":"ImageObject","url":"https://dingkyoma.coding.net/p/img/d/CloudPic/git/raw/master/img/IMG_0646-192.png","width":191,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://blog.kyoma.top?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"所有标签","description":"Technology blog website","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.kyoma.top/tags/index.html"},"author":{"@type":"Person","name":"Yiding Wang","image":{"@type":"ImageObject","url":"https://dingkyoma.coding.net/p/img/d/CloudPic/git/raw/master/img/IMG_0646-192.png"},"url":"https://blog.kyoma.top/"},"publisher":{"@type":"Organization","name":"Yiding's Blog","logo":{"@type":"ImageObject","url":"https://dingkyoma.coding.net/p/img/d/CloudPic/git/raw/master/img/IMG_0646-192.png","width":191,"height":192}},"url":"https://blog.kyoma.top/tags/index.html","wordCount":0,"datePublished":"2022-05-27T14:03:25.124Z","dateModified":"2022-05-27T14:03:25.115Z","image":{"@type":"ImageObject","url":"https://dingkyoma.coding.net/p/img/d/CloudPic/git/raw/master/img/IMG_0646-192.png","width":191,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Yiding's Blog","url":"https://blog.kyoma.top/","logo":{"@type":"ImageObject","url":"https://dingkyoma.coding.net/p/img/d/CloudPic/git/raw/master/img/IMG_0646-192.png","width":191,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Yiding Wang","image":{"@type":"ImageObject","url":"https://dingkyoma.coding.net/p/img/d/CloudPic/git/raw/master/img/IMG_0646-192.png"},"url":"https://blog.kyoma.top/","sameAs":["https://github.com/Ding-Kyoma"],"description":"Technology blog website"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://blog.kyoma.top/","name":"Yiding's Blog"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Yiding's Blog","url":"https://blog.kyoma.top/","keywords":null,"description":"Technology blog website","author":{"@type":"Person","name":"Yiding Wang","image":{"@type":"ImageObject","url":"https://dingkyoma.coding.net/p/img/d/CloudPic/git/raw/master/img/IMG_0646-192.png"},"url":"https://blog.kyoma.top/","description":"Technology blog website"},"publisher":{"@type":"Organization","name":"Yiding's Blog","url":"https://blog.kyoma.top/","logo":{"@type":"ImageObject","url":"https://dingkyoma.coding.net/p/img/d/CloudPic/git/raw/master/img/IMG_0646-192.png","width":191,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://blog.kyoma.top?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"所有标签","description":"Technology blog website","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.kyoma.top/tags/index.html"},"author":{"@type":"Person","name":"Yiding Wang","image":{"@type":"ImageObject","url":"https://dingkyoma.coding.net/p/img/d/CloudPic/git/raw/master/img/IMG_0646-192.png"},"url":"https://blog.kyoma.top/"},"publisher":{"@type":"Organization","name":"Yiding's Blog","logo":{"@type":"ImageObject","url":"https://dingkyoma.coding.net/p/img/d/CloudPic/git/raw/master/img/IMG_0646-192.png","width":191,"height":192}},"url":"https://blog.kyoma.top/tags/index.html","wordCount":0,"datePublished":"2022-05-27T14:03:25.124Z","dateModified":"2022-05-27T14:03:25.115Z","image":{"@type":"ImageObject","url":"https://dingkyoma.coding.net/p/img/d/CloudPic/git/raw/master/img/IMG_0646-192.png","width":191,"height":192}}]</script>
 
 
 
@@ -3982,7 +3983,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
           "pjax", // <pjax></pjax> 标签
           "script[data-pjax], .pjax-reload script" // script标签添加data-pjax 或 script标签外层添加.pjax-reload 的script代码段重载
         ],
-        cacheBust: true,   // url 地址追加时间戳，用以避免浏览器缓存
+        cacheBust: false,   // url 地址追加时间戳，用以避免浏览器缓存
         timeout: 0,
         
       });
