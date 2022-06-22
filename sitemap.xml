@@ -106,6 +106,13 @@
   </url>
   
   <url>
+    <loc>https://blog.kyoma.top/tags/hidpi/</loc>
+    <lastmod>2022-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.kyoma.top/tags/python/</loc>
     <lastmod>2022-06-22</lastmod>
     <changefreq>weekly</changefreq>
@@ -127,7 +134,7 @@
   </url>
   
   <url>
-    <loc>https://blog.kyoma.top/tags/hidpi/</loc>
+    <loc>https://blog.kyoma.top/tags/nginx/</loc>
     <lastmod>2022-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -135,13 +142,6 @@
   
   <url>
     <loc>https://blog.kyoma.top/tags/metrics/</loc>
-    <lastmod>2022-06-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.kyoma.top/tags/nginx/</loc>
     <lastmod>2022-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -157,14 +157,14 @@
   </url>
   
   <url>
-    <loc>https://blog.kyoma.top/categories/Machine-Learning/</loc>
+    <loc>https://blog.kyoma.top/categories/macOS/</loc>
     <lastmod>2022-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.kyoma.top/categories/macOS/</loc>
+    <loc>https://blog.kyoma.top/categories/Machine-Learning/</loc>
     <lastmod>2022-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
